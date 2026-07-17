@@ -101,6 +101,75 @@ footer{
     padding:20px;
     color:#bbb;
 }
+
+ .banner{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+    url("images/banner.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.banner-content{
+    max-width:800px;
+}
+
+.banner h1{
+    color:#D4AF37;
+    font-size:clamp(2.2rem,5vw,4.5rem);
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.banner h2{
+    font-size:clamp(1.2rem,3vw,2rem);
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.banner p{
+    font-size:clamp(1rem,2vw,1.2rem);
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:#D4AF37;
+    color:#111;
+    padding:15px 35px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.banner{
+    min-height:75vh;
+}
+
+.banner p{
+    display:none;
+}
+
+.btn{
+    padding:12px 28px;
+}
+
+}   
 </style>
 
 </head>
@@ -109,7 +178,26 @@ footer{
 <header>
 <h1>Hotel Butler Academy</h1>
 <p>Developing Excellence in Professional Hospitality Skills</p>
-</header>
+</header><section class="banner">
+
+<div class="banner-content">
+
+<h1>Hotel Butler Academy</h1>
+
+<h2>Developing Excellence in Professional Hospitality Skills</h2>
+
+<p>
+Professional Butler Training • Luxury Hospitality Consulting •
+VIP Guest Experience • Hotel Service Excellence
+</p>
+
+<a href="#contact" class="btn">Contact Us</a>
+
+</div>
+
+</section>
+
+    
 
 <section class="hero">
 <h2>Luxury Hospitality & Butler Training</h2>
