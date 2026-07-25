@@ -336,8 +336,174 @@ body{
 }
 
 }
-</style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#07111b;
+color:#fff;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+background:#0b1320;
+padding:20px 5%;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.feature{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding:10px;
+}
+
+.feature i{
+font-size:28px;
+color:#caa15d;
+margin-bottom:12px;
+}
+
+.feature h4{
+color:#d7b06a;
+margin-bottom:5px;
+}
+
+.feature p{
+font-size:14px;
+color:#bbb;
+}
+
+.about{
+padding:70px 5%;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr 260px;
+gap:40px;
+align-items:center;
+}
+
+.about-image{
+position:relative;
+}
+
+.about-image img{
+width:100%;
+display:block;
+border:1px solid #b48b47;
+}
+
+.founder{
+position:absolute;
+bottom:20px;
+left:20px;
+background:#08111c;
+padding:20px;
+border:1px solid #b48b47;
+}
+
+.founder h3{
+color:#d7b06a;
+margin-bottom:5px;
+}
+
+.small-title{
+letter-spacing:3px;
+font-size:12px;
+color:#caa15d;
+}
+
+.about-content h2{
+font-size:44px;
+font-weight:400;
+margin:20px 0;
+line-height:1.2;
+}
+
+.about-content p{
+color:#bcbcbc;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 28px;
+background:#c89a50;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+text-transform:uppercase;
+font-size:14px;
+}
+
+.stats{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.stat{
+padding:25px;
+border-left:2px solid #c89a50;
+background:#0d1522;
+}
+
+.stat h2{
+font-size:48px;
+color:#d7b06a;
+margin-bottom:8px;
+}
+
+.stat p{
+color:#bdbdbd;
+line-height:1.5;
+}
+
+@media(max-width:992px){
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+.stats{
+flex-direction:row;
+flex-wrap:wrap;
+}
+
+.stat{
+flex:1 1 200px;
+}
+
+}
+
+@media(max-width:600px){
+
+.features{
+grid-template-columns:1fr;
+}
+
+.about-content h2{
+font-size:34px;
+}
+
+}
+</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
@@ -397,6 +563,127 @@ body{
         </div>
     </div>
 </section>
+
+<!-- Features -->
+<section class="features">
+
+    <div class="feature">
+        <i class="fa-solid fa-award"></i>
+        <h4>34+ Years</h4>
+        <p>Hospitality Experience</p>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-ship"></i>
+        <h4>13 Years</h4>
+        <p>Silversea Cruises</p>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-building"></i>
+        <h4>Global Standards</h4>
+        <p>Luxury Hospitality</p>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-user-tie"></i>
+        <h4>Tailored Training</h4>
+        <p>Practical & Effective</p>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>Excellence</h4>
+        <p>In Every Detail</p>
+    </div>
+
+</section>
+
+
+<section class="about">
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img src="images/about.jpg" alt="About">
+
+<div class="founder">
+
+<h3>Michel C. Preston</h3>
+
+<p>Founder & Head Consultant</p>
+
+</div>
+
+</div>
+
+
+<div class="about-content">
+
+<span class="small-title">ABOUT US</span>
+
+<h2>
+Experience. Excellence.<br>
+Exceptional Service.
+</h2>
+
+<p>
+
+With over 34 years in the hospitality industry and 13 years
+as a Butler with Silversea Cruises, our academy delivers
+world-class luxury hospitality expertise.
+
+</p>
+
+<p>
+
+The Butler Academy is dedicated to raising the standards
+of butler service through professional training,
+SOP development and operational consulting.
+
+</p>
+
+<a href="#" class="btn">
+Learn More About Us
+</a>
+
+</div>
+
+
+
+<div class="stats">
+
+<div class="stat">
+
+<h2>34+</h2>
+
+<p>Years Hospitality Experience</p>
+
+</div>
+
+<div class="stat">
+
+<h2>13</h2>
+
+<p>Years Silversea Cruises</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100+</h2>
+
+<p>Projects & Training Programs</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 
 <footer>
 
